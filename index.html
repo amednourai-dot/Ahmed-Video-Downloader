@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#101426">
+    <meta name="description" content="Ahmed Video Downloader">
+    <title>Ahmed Video Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#home" aria-label="الصفحة الرئيسية">
+            <span class="logo-icon">A</span>
+            <span>Ahmed <strong>Downloader</strong></span>
+        </a>    <button id="theme-toggle" class="icon-button" type="button" aria-label="تبديل الوضع">
+        ☀️
+    </button>
+</header>
+
+<main class="app">
+    <section id="home" class="page active">
+        <div class="hero">
+            <div class="badge">سريع · بسيط · سهل الاستخدام</div>
+            <h1>حمّل فيديوهاتك<br><span>بكل سهولة</span></h1>
+            <p class="description">أدخل رابط الفيديو للبدء.</p>
+        </div>
+
+        <div class="platform-card">
+            <div class="platform-icon">♪</div>
+            <div class="platform-info">
+                <h2>TikTok Downloader</h2>
+                <p>المنصة المتاحة حاليًا</p>
+            </div>
+            <span class="platform-status">قريبًا</span>
+        </div>
+
+        <form id="download-form" class="download-form">
+            <label for="video-url">رابط الفيديو</label>
+
+            <div class="input-box">
+                <input id="video-url" type="url" placeholder="ألصق رابط TikTok هنا..." autocomplete="url" required>
+                <button id="paste-btn" type="button" class="paste-btn">لصق</button>
+            </div>
+
+            <button id="analyze-btn" class="download-btn" type="submit">
+                تحليل الرابط <span>←</span>
+            </button>
+
+            <p id="message" class="message" role="status" aria-live="polite">
+                أدخل رابط فيديو للبدء.
+            </p>
+        </form>
+
+        <div id="result" class="result hidden" aria-live="polite">
+            <h2>نتيجة التحليل</h2>
+            <p id="result-text"></p>
+        </div>
+    </section>
+
+    <section id="guide" class="page">
+        <div class="page-heading">
+            <span class="section-icon">📖</span>
+            <h1>كيفية الاستخدام</h1>
+            <p>ثلاث خطوات بسيطة للبدء.</p>
+        </div>
+
+        <div class="guide-list">
+            <article class="guide-card">
+                <span class="step-number">01</span>
+                <div>
+                    <h2>انسخ الرابط</h2>
+                    <p>افتح الفيديو في TikTok وانسخ رابطه.</p>
+                </div>
+            </article>
+
+            <article class="guide-card">
+                <span class="step-number">02</span>
+                <div>
+                    <h2>ألصق الرابط</h2>
+                    <p>ارجع إلى الصفحة الرئيسية والصق الرابط.</p>
+                </div>
+            </article>
+
+            <article class="guide-card">
+                <span class="step-number">03</span>
+                <div>
+                    <h2>حلّل الرابط</h2>
+                    <p>اضغط على زر تحليل الرابط لبدء التحقق.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="notice">
+            <h2>ملاحظة</h2>
+            <p>تنزيل الفيديوهات فعليًا يحتاج إلى ربط خدمة معالجة مناسبة. هذه النسخة تتحقق من الرابط فقط.</p>
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <div class="page-heading">
+            <span class="section-icon">ℹ️</span>
+            <h1>حول الموقع</h1>
+            <p>Ahmed Video Downloader</p>
+        </div>
+
+        <div class="info-card">
+            <h2>هدفنا</h2>
+            <p>توفير واجهة بسيطة للتعامل مع روابط الفيديوهات، مع إمكانية إضافة منصات أخرى مستقبلًا.</p>
+        </div>
+
+        <div class="info-card">
+            <h2>الخصوصية</h2>
+            <p>لا تدخل كلمات المرور أو المعلومات الشخصية الحساسة في الموقع.</p>
+        </div>
+
+        <div class="info-card">
+            <h2>الاستخدام المسؤول</h2>
+            <p>احترم حقوق أصحاب المحتوى وشروط المنصات عند تنزيل الفيديوهات أو إعادة استخدامها.</p>
+        </div>
+
+        <p class="version">الإصدار 1.1</p>
+    </section>
+</main>
+
+<nav class="bottom-nav" aria-label="التنقل الرئيسي">
+    <button class="nav-button active" type="button" data-page="home">
+        <span>⌂</span>
+        <small>الرئيسية</small>
+    </button>
+
+    <button class="nav-button" type="button" data-page="guide">
+        <span>☷</span>
+        <small>كيفية الاستخدام</small>
+    </button>
+
+    <button class="nav-button" type="button" data-page="about">
+        <span>ⓘ</span>
+        <small>حول الموقع</small>
+    </button>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
